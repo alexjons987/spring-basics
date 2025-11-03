@@ -1,4 +1,4 @@
-package com.example.springbasics;
+package com.example.springbasics.service;
 
 public class HelloService {
     public String greet(String name) {

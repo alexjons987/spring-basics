@@ -1,5 +1,6 @@
-package com.example.springbasics;
+package com.example.springbasics.controller;
 
+import com.example.springbasics.service.HelloService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
