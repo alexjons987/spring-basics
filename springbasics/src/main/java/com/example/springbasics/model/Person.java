@@ -1,9 +1,9 @@
 package com.example.springbasics.model;
 
 public class Person {
-    private final String name;
-    private final int age;
-    private final String occupation;
+    private String name;
+    private int age;
+    private String occupation;
 
     public Person(String name, int age, String occupation) {
         this.name = name;
@@ -15,12 +15,24 @@ public class Person {
         return this.name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return this.age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public String getOccupation() {
         return this.occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
     }
 
     public String toString() {
