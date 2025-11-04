@@ -31,7 +31,7 @@ public class CalculatorController {
     }
 
     @GetMapping("/calc/div")
-    public ResponseEntity<?> division(@RequestParam Integer x, @RequestParam Integer y) {
+    public ResponseEntity<?> division(@RequestParam(defaultValue = "0") Integer x, @RequestParam(defaultValue = "0") Integer y) {
         if (y == 0) {
             return ResponseEntity.badRequest().body("Error: Cannot divide by 0!");
         }

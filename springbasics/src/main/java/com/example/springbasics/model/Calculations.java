@@ -1,10 +1,10 @@
 package com.example.springbasics.model;
 
 public class Calculations {
-    private int add;
-    private int sub;
-    private int mul;
-    private float div;
+    private final int add;
+    private final int sub;
+    private final int mul;
+    private final float div;
 
     public Calculations(int x, int y) {
         this.add = x + y;
